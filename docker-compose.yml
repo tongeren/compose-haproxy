@@ -16,7 +16,7 @@ services:
     image: indiehosters/haproxy
     volumes:
     - "./haproxy:/etc/haproxy"
-    - "/dev/log:/dev/log"
+    - "/private/dev/log:/dev/log"
     links:
     - letsencrypt
     ports:
